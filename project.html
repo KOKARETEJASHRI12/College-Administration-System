@@ -1,0 +1,1169 @@
+
+
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+
+<head>
+    
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js">
+    </script>
+
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <style>
+
+
+
+
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0(0, 0, 0); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+          
+            background-size: cover;        
+        }
+        * {box-sizing:border-box}
+
+        
+    
+        div.scrollmenu a {
+  display:inline-flexbox;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration:none;
+}
+
+div.scrollmenu a:hover {
+  background-color:brown;
+}
+
+
+        
+        h2 {
+            color:green;
+        }
+        
+        h1{
+            color:darkgreen;
+        }
+        h3{
+           color:orangered;
+           text-align:left;
+        }
+        ol{
+            text-align:left;
+        }
+        ul{
+            text-align:left;
+        }
+        
+        td{
+            text-decoration: double;
+        }
+        table{
+           text-align: 'center';
+        }
+        .card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+h4{
+  color:blueviolet;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+footer {
+   position:relative;
+   padding: 10px;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container{
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <img src="l.png" align="left">
+        <b><h2>Agricultural Development Trust's<br>
+           Shardabai Pawar Mahila Arts, Commerce & Science College<br>
+            Shardanagar, Malegaon Bk., Tal- Baramati , Dist - Pune , 413115, Maharashtra, India</h2></b>  
+        
+    <script type="text/ng-template" id="home.html">
+	
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="c1.jpg" alt="Los Angeles" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="c2.jpg" alt="Chicago" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="act2.jpg" alt="New York" class="d-block w-100">
+              </div>
+            </div>
+          
+            
+        </script>
+
+    </script>
+    
+
+    <script type="text/ng-template" id="about.html">
+
+
+        <video width="100%" height="300"  controls >
+            <source src="kvk.mp4" type="video/mp4">
+        </video>
+        
+		
+		<table align="center" border="1">
+            
+
+            <h2>	
+        <tr>
+            <th>ROLL NO</th>
+            <th>NAME</th>
+            <th>DES</th>
+        </tr> 
+        <tr>
+            <td>1</td>
+            <td>Hon. Shri. Sharadchandraji Govindrao Pawar</td>
+            <td>President</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Hon. Shri. Rajendra Dinkarrao Pawar</td>
+            <td>Chairman</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Hon. Shri. Prataprao Govindrao Pawar	</td>
+            <td>Trustee</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Hon. Shri. Vishnupant Atmaram Hingane</td>
+            <td>Trustee</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Hon. Shri. Rajeev Haribhau Deshpande</td>
+            <td>Trustee</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Hon. Dr. Avinash Bhalerao Baravkar</td>
+            <td>Trustee</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Hon. Sou. Sunanda Rajendra Pawar	</td>
+            <td>Trustee / Secretary</td>
+            
+            
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Hon. Shri. Ranjeet Dinkarrao Pawar</td>
+            <td>Trustee</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Hon. Dr. Sou. Rajani Subhashrao Indulkar</td>
+            <td>Trustee</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Hon. Sou. Supriya Sadanand Sule</td>
+            <td>Trustee</td>
+            
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Hon. Dr. Shankarrao Shrirang Magar</td>
+            <td>Trustee</td>
+            
+        </tr>
+    </h2>
+    </table>
+    
+    
+    
+      
+    
+    <i><br>
+ <b>In 1991, Shardabai Pawar Mahila Arts, Commerce and Science College was established to empower women in rural area through quality education under the aegis of Agricultural Development Trust, Baramati. The college is affiliated to the Savitribai Phule Pune University (formerly known as Pune University) and is registered under section 2(f) and 12 (B) of the UGC. The college has campus of 18.14 acres with a supporting infrastructure of 9320 sq. m
+
+The college conducts unique activities such as pre– police recruitment training for women to elevate employability of students, Swayamsiddha for the empowerment through personality development of students, Karmveer Mess Scheme for the welfare of economically deprived students, etc.
+
+The college offers 23 UG programs, 8 PG programs and a Ph. D. program in Microbiology. The UGC sanctioned 170 lakhs for two B. Voc. programs and 80 lakhs for two community college courses. The DBT has awarded star college scheme to Department of Botany, Chemistry and Microbiology in 2020. The DBT has funded 63 lakhs to these three deparments.The college offers 23 UG programs, 8 PG programs and a Ph. D. program in Microbiology. The UGC sanctioned 170 lakhs for two B. Voc. programs and 80 lakhs for two community college courses. The DBT has awarded star college scheme to Department of Botany, Chemistry and Microbiology in 2020. The DBT has funded 63 lakhs to these three departments.</h6></b>
+
+
+
+
+    </i>
+	</script>
+    <script type="text/ng-template" id="contact.html">
+        
+
+
+
+<center>
+        <div class="card" style="width:400px">
+          <b><img class="card-img-top" src="c1.jpg" >
+          <div class="card-body">
+            <h2 class="card-title">ADDRESS</h2>
+            <b class="card-text"> <h2><b>Shardabai Pawar Mahila Arts,</b><br>
+              <b>Commerce and Science College, </b><br>
+              <b>Shardanagar, </b><br>
+              <b>Baramati</b></h2><br>
+            </b></b>
+            
+        
+ <b>Telephone: 02112 254250<br>
+ Email: spmm20067@rdiffmaiel.com<br>
+ Email: principalspmc@adtbaramati.com<br>
+Instagram:spacscollegebaramati<br>
+Youtube:Shardabai Pawar ACS College Shardanagar</b>
+
+
+       <b>Useful links</b><br>
+<u>Savitribai Phule Pune University, Pune<br>
+University Grants Commission (UGC), New Delhi<br>
+National Assessment and Accreditation Council (NAAC), Bangalore<br>
+Agricultural Development Trust, Baramati</u>
+</center>
+	</script>
+
+    
+    <script type="text/ng-template" id="lib.html">
+      
+      
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="l33.jpg" >
+            <div class="card-body">
+              <h5 class="card-title"><h3>Total Area of the Central Library</h3></h5>
+              <p class="card-text"><ol>
+                <b><li>Ground Floor	3934.9 Sq.f
+                  Seating Capacity Staff	25</li>
+                  <li>	First Floor	2512.4 Sq.f
+                  Seating Capacity	75</li>
+                  <li>	Second Floor	3547.5 Sq.f
+                  Seating Capacity	218</li>
+                  <li>	Third Floor	3547.5 Sq.f</li>
+                  Seating Capacity	282Seating Capacity of Reading Hall – 600</ol><br>
+                  </b></b><br>
+              </ol></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="l55.jpg">
+            <div class="card-body">
+              <h5 class="card-title"><h3>Best Practices of the Library</h3></h5>
+              <p class="card-text"><ol><b>1. Provide open access to all students / staff<br>
+                2. Use of Library Automation<br>
+                3. Book Exhibitions<br>
+                4. Reading Hall open 17 hours – 365 days<br>
+                5. Free Internet Facility for all Reader</ol></b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="l2.jpg">
+            <div class="card-body">
+              <h5 class="card-title"><h3>Library Services</h3></h5>
+              <p class="card-text"><b><ul type="circle">
+                <li>Computerized Barcode Issue Return.</li>
+        <li>Reference Services.<li>
+        <li>Indexing Services.</li>
+              
+            <li> Issue of Smart Identity Card with Barcode.</li>
+        <li> Library orientation program for first year student.</li>
+        <li> OPAC – online public Assess Catalogue.</li>
+        <li> Circulation of Books and other Reading material.</li>
+        <li> Inter Library Loan System.</li>
+        <li> Internet surfing & Downloading facility for Reader.</li>
+        <li>Photo copying facility.</li>
+        <li>Open Access System to all Students.</li>
+        <li> News paper clipping file.</li></ul></b><br></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img class="card-img-top" src="l4.jpg">
+            <div class="card-body">
+              <h5 class="card-title"><h3>Facilities Available in the Library</h3></h5>
+              <p class="card-text"><b><ul>1	Reading Hall<br>
+                2	Book Bank Facility<br>
+                3	Reprographic<br>
+                4	Open Access System<br>
+                5	Internet Lab ( E-Library )<br>
+                6	Drinking of water<br>
+                7	Wash Room</ul>
+                </b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="h-100 bg-dark">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card card-registration my-4">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-none d-xl-block">
+                    <img src="11.jpg"align="right">
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 text-uppercase">Student registration form</h3>
+      
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example1m">First name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example1n">Last name</label>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example1m1">Mother's name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example1n1">Father's name</label>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example8">Address</label>
+                      </div>
+      
+                      <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+      
+                        <h6 class="mb-0 me-4">Gender: </h6>
+      
+                        <div class="form-check form-check-inline mb-0 me-4">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                            value="option1" />
+                          <label class="form-check-label" for="femaleGender">Female</label>
+                        </div>
+      
+                        <div class="form-check form-check-inline mb-0 me-4">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                            value="option2" />
+                          <label class="form-check-label" for="maleGender">Male</label>
+                        </div>
+      
+                        <div class="form-check form-check-inline mb-0">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                            value="option3" />
+                          <label class="form-check-label" for="otherGender">Other</label>
+                        </div>
+      
+                      </div>
+      
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+      
+                          <select class="select">
+                            <option value="1">Dist</option>
+                            <option value="2">Pune </option>
+                            <option value="3">Indapur</option>
+                            <option value="4">Solapur</option>
+                            <option value="4">Mumbai</option>
+                            <option value="4">Satara</option>
+                          </select>
+      
+                        </div>
+                        
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example9" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example9">DOB</label>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example90" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example90">Pincode</label>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example99" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example99">Course</label>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example97" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example97">Email ID</label>
+                      </div>
+                       <div>
+                        <a href="#/home/four"><button type="submit" >Submit</button></a>
+                       </div>
+                      
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</script>
+
+<script type="text/ng-template" id="act.html">
+  <section class="h-100 h-custom" style="background-color: #8fc4b7;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp"
+              class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+              alt="Sample photo">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
+  
+              <form class="px-md-2">
+  
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1q" class="form-control" />
+                  <label class="form-label" for="form3Example1q">Name</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1q" class="form-control" />
+                  <label class="form-label" for="form3Example1q">Course</label>
+                </div>
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+  
+                    <div class="form-outline datepicker">
+                      <input type="text" class="form-control" id="exampleDatepicker1" />
+                      <label for="exampleDatepicker1" class="form-label">Select a date</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4">
+  
+                    <select class="select">
+                      <option value="1" disabled>Gender</option>
+                      <option value="2">Female</option>
+                      <option value="3">Male</option>
+                      <option value="4">Other</option>
+                    </select>
+  
+                  </div>
+                </div>
+  
+                <div class="mb-4">
+  
+                  <select class="select">
+                    <option value="1" disabled>Class</option>
+                    <option value="2">FY</option>
+                    <option value="3">SY</option>
+                    <option value="4">TY</option>
+                  </select>
+  
+                </div>
+                <div class="mb-4">
+                  <select class="select">
+                    <option value="1" disabled>select Activity</option>
+                    <option value="2">NSS</option>
+                    <option value="3">NCC</option>
+                    <option value="4">SPORTS</option>
+                    </select>
+
+                    </div>
+  
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-6">
+  
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1w" class="form-control" />
+                      <label class="form-label" for="form3Example1w">Registration code</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <a href="#/home/four"><button type="submit" >Cancle</button></a>
+                <a href="#/home/four"><button type="submit" >Update</button></a>
+                <a href="#/home/four"><button type="submit" >Submit</button></a>
+  
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <video width="40%" height="300"  controls align="left" >
+    <source src="vact2.mp4" type="video/mp4">
+</video>
+<video width="40%" height="300"  controls align="left" >
+  <source src="vact1.mp4" type="video/mp4">
+</video>
+
+
+    <div class="row">
+      <div class="column">
+                 <div class="card" style="width:400px">
+            <img class="card-img-top" src="" >
+            <div class="card-body">
+              <h4 class="card-title"><h3>Commerce</h3></h4>
+              <p class="card-text"><b></b></p>
+              <ol>
+    <li>Guest lecture on Budget Analysis
+    <li>Internship Program
+    <li>Guest lecture on Skill Development
+    <li>Online guest lecture on Share Market
+    <li>Awareness program on Covid Vaccination
+    <li>FY B.Com ,FY BBA(CA) Welcome Program
+    <li>Debate Competition
+    <li>KVK Visit
+    <li>Poster Presentation
+    <li>Guest Lecture on Cyber Crime
+    <li>Guest lecture on Internship Program
+   <li> Market Mela
+    <li>Online Quiz Competition
+<li> Guest lecture on Project Work
+    <li>Guest Lecture on MBA Entrance Exam.
+    </ol>
+  <img class="card-img-top" src="art5.png" >
+  <h4 class="card-title"><h3>Art</h3></h4>
+              <p class="card-text"><b></b></p>
+              <ul>
+                <li>सुलेखन कार्यशाळा
+                  <li>आंतर्नाद भित्तीपत्रक
+                    <li>ACHIEVEMENTS
+                      <li> हिंदी वक्तृत्व प्रतियोगिता
+                         <li> 2	दोहा लेखन पठन प्रतियोगिता
+                          <li>3	निबंध प्रतियोगिता
+                            <li>Modi Lipi certificate Course
+                              <li>	Certificate Course in Drama     
+                               <li> Healthy lifestyles
+                              <li>  Life-long education
+                               <li> Service-learning                    
+                               <li> To give information related to Indian Administration system & International Politics.                    
+                               </ul>                           
+<img class="card-img-top" src="art1.png" >
+  <img class="card-img-top" src="art2.png" >
+  <img class="card-img-top" src="art4.png" >          
+
+      <h4 class="card-title"><h3>science</h3></h4>
+                <p class="card-text"><b></b></p>
+              <ol>
+                <li>	Chemquiz
+                  <li>Chemiad Competition
+                  <li>Manufacturing and Exhibition of Household and Herbal Cosmetic Products
+                  <li>	Industrial Visits – Dairy and Sugar Industry Visit
+                  <li>	Soil and Water analysis
+                    <li>Seminars/ Workshops/ Conference Organized
+<li>Title of international web-conference: Advanced Nanostructured Materials for Energy Generation, Storage and Smart Applications
+  <li>To encourage students to develop their analytical and logical thinking.
+   <li> To conduct faculty training program through invited talks or workshops.       
+  <li>Zoology Department always collaborate with Krishi vigyan kendra of fishery unit in delivering lectures for farmers having Fishery unit.
+  <li>Online / Offline Pre-placement preparation seminars / Workshops.
+  <li> Skill based Add-On courses.
+    <li> Arrange Social Activities related to Computer Science like Cyber Security, internet awareness.
+    <li>. Motivate students to participate in various sports & other activities.
+    <li> Guide to attempt Soft Skill & skill based online courses like SWAYAM, NPTEL, TCS, and GOOGLE.
+    <img class="card-img-top" src="" >
+              <img class="card-img-top" src="sci1.jpg" >
+              <img class="card-img-top" src="sci2.png" >
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="column">
+                     <div class="card" style="width:400px">
+                <img class="card-img-top"  >
+                <div class="card-body">
+                <p class="card-text"></p>
+                <h4 class="card-title"><h3>B.VOC</h3></h4>
+                  <ol>
+           <li>Empowering the youth with relevant education and creating 'Industry- fit’ skilled work force.
+               <li> To provide judicious mix of skills in professional education.
+                <li>To focuse on enhancing employibility to meet the industry requirements.
+                <li>To be the qualitative for the quality.
+                 <li> a	Celebration of Handloom Day
+<li>Workshops
+<li>	Manufacturing and Exhibition of Handmade products and apparel Products
+<li>Industrial Visits – Food Industry and Textile Industry
+<li>Internship
+</ol>
+  <img class="card-img-top" src="bvoc.jpg" >
+                  <h4 class="card-title"><h3>Home Science</h3></h4>
+                  <ol>
+                    <li>Celebration of Nutrition Week
+                      <li>Workshops
+                      <li>	Manufacturing and Exhibition of Handmade products and apparel Products
+                      <li>Industrial Visits – Food Industry and Textile Industry
+                      <li>	Internship
+                      </ol>
+                      <h4 class="card-title"><h3>Certificate Courses</h3></h4>
+                    <ol>
+                      <li>Spoken English
+                        <li>Making learning basic Mathematical models
+                          <li>	Preservative products
+                            <li>	Basic Techniques in Polyhouse
+                              <li>	Soil Analysis and Testing
+                                <li>	Introduction to Geo-gebra Software
+                                  <li>	Innovative Products from Soya beans
+                                    <li>	Nursery Technique
+                        <li>	English for Business and Entrepreneurship
+                        <li>	Preparation of Herbal Recipes
+                          <li>	Stitch Craft
+                            <li>	Therapeutic Food Products for Vulnerable Groups
+                        <li>	Travel and Tourism
+                          <li>	Tailoring and Fashion
+                            <li>	Drama and Theatre
+                              <li>Quality Control
+                                <li>Agribusiness Management
+                                  <li>Bakery
+                                    <li>English for Career Development
+                                    </ol>
+                                    <h4 class="card-title"><h3>BBA(CA)computer application</h3></h4>
+                                    <ol>
+                                     <li> To provide quality education in computer Application.
+                                      <li>To provide exposure to students to the latest tools and technologies in the area of computer software.
+                                      <li>To make students ready for the industrial environment.
+                                     <li> To provide a learning environment that helps students to enhance
+                                     <li> Problem solving skills , be successful in their professional lives.
+                                    </ol>
+                                    <img class="card-img-top" src="bca.jpg" >
+                                    <img class="card-img-top" src="bca1.jpg" >
+                                    <img class="card-img-top" src="bca3.jpg" >     
+                                    
+         </div>
+              </div>
+        </div><hr>
+        
+     
+    </script>
+    <script type="text/ng-template" id="dep.html">
+          <li><a  href="#/seven">Registration form</a></li>
+      <img src="sc.png"><hr>
+          <img src="sc1.png"><hr>
+          <img src="sc3.png"><hr>
+        
+        
+        </script>
+        <script type="text/ng-template" id="sff.html">
+          <div class="row">
+            <div class="column">
+              <h1>BBA(CA)</h1><br>
+
+              <div class="card">
+                <h3>BABAR MADAM</h3><br><img src="babar.jpg" class="img-fluid rounded-start" alt="..">.</div>
+            <br>
+            <h3>PARKALE MADAM</h3>
+            <img src="prakale.jpg" class="img-fluid rounded-start" alt=".."><br>
+            <h3>SHAIKH MADAM </h3>
+
+          <img src="summaiya.jpg" class="img-fluid rounded-start" alt="..">
+          <h1>COMERCE</h1>
+          <h3>Dr. Ashlesha R. Mungi</h3><br>
+          <img src="mungi1.jpg" class="img-fluid rounded-start" alt=".."><br>
+          
+          <h3>Apeksha S. Gawade</h3><br>
+          <img src="gavade.jpg" class="img-fluid rounded-start" alt=".."><br>
+        </div>
+        <div class="column">
+              <h1>BCS</h1>
+              <div class="card">
+                <h3>Pallavi U. Patil</h3><br>
+                <img src="pllavi.jpg" class="img-fluid rounded-start" alt=".."><br><br>
+                <h3>Priti D. More</h3><br>
+                <img src="patil.jpg" class="img-fluid rounded-start" alt=".."><br>
+                <h3>Vinod B. Jankar</h3><br>
+                <img src="jankar.jpg" class="img-fluid rounded-start" alt=".."><br>
+                <h1>ARTS</h1>
+                <h3>Jalindar R. Ghodake</h3><br>
+                <img src="art00.jpg" class="img-fluid rounded-start" alt=".."><br>
+<br>                        <h1>HOME SCIENCE</h1>
+                <h3>Shubhangi T. Taware</h3><br>
+                <img src="HOME.jpg" class="img-fluid rounded-start" alt=".."><br>
+                
+              </div>
+            </div>
+          </script>
+
+<script type="text/ng-template" id="form.html">
+  <section class="h-100 bg-dark">
+                <div class="container py-5 h-100">
+                  <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col">
+                      <div class="card card-registration my-4">
+                        <div class="row g-0">
+                          <div class="col-xl-6 d-none d-xl-block">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                              alt="Sample photo" class="img-fluid"
+                              style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                          </div>
+                          <div class="col-xl-6">
+                            <div class="card-body p-md-5 text-black">
+                              <h3 class="mb-5 text-uppercase">Student registration form</h3>
+              
+                              <div class="row">
+                                <div class="col-md-6 mb-4">
+                                  <div class="form-outline">
+                                    <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1m">First name</label>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                  <div class="form-outline">
+                                    <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1n">Last name</label>
+                                  </div>
+                                </div>
+                              </div>
+              
+                              <div class="row">
+                                <div class="col-md-6 mb-4">
+                                  <div class="form-outline">
+                                    <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1m1">Mother's name</label>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                  <div class="form-outline">
+                                    <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1n1">Father's name</label>
+                                  </div>
+                                </div>
+                              </div>
+              
+                              <div class="form-outline mb-4">
+                                <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example8">Address</label>
+                              </div>
+              
+                              <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+              
+                                <h6 class="mb-0 me-4">Gender: </h6>
+              
+                                <div class="form-check form-check-inline mb-0 me-4">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                    value="option1" />
+                                  <label class="form-check-label" for="femaleGender">Female</label>
+                                </div>
+              
+                                <div class="form-check form-check-inline mb-0 me-4">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                    value="option2" />
+                                  <label class="form-check-label" for="maleGender">Male</label>
+                                </div>
+              
+                                <div class="form-check form-check-inline mb-0">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                                    value="option3" />
+                                  <label class="form-check-label" for="otherGender">Other</label>
+                                </div>
+              
+                              </div>
+              
+                              <div class="row">
+                                <div class="col-md-6 mb-4">
+              
+                                  <select class="select">
+                                    <option value="1">State</option>
+                                    <option value="2">Maharashtra</option>
+                                    <option value="3">Up</option>
+                                    <option value="4">Gujrat</option>
+                                  </select>
+              
+                                </div>
+                                <div class="col-md-6 mb-4">
+              
+                                  <select class="select">
+                                    <option value="1">City</option>
+                                    <option value="2">Pune</option>
+                                    <option value="3">Baramati</option>
+                                    <option value="4">Solapur</option>
+                                  </select>
+              
+                                </div>
+                              </div>
+              
+                              <div class="form-outline mb-4">
+                                <input type="text" id="form3Example9" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example9">DOB</label>
+                              </div>
+              
+                              <div class="form-outline mb-4">
+                                <input type="text" id="form3Example90" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example90">Pincode</label>
+                              </div>
+              
+                              <div class="form-outline mb-4">
+                                <input type="text" id="form3Example99" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example99">Course</label>
+                              </div>
+              
+                              <div class="form-outline mb-4">
+                                <input type="text" id="form3Example97" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example97">Email ID</label>
+                              </div>
+              
+                              <div class="d-flex justify-content-end pt-3">
+                                <a href="#/home" class="cancel">Cancel</a><br>
+                                <a href="#/home" class="cancel"></a><br>
+                                <a href="#/fee/form"><button type="submit">Submit</button></a>
+                              </div>
+              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+             </form>
+                </script>
+
+
+                  <script type="text/ng-template" id="fee.html">
+                    <div class="row">
+                      <div class="col-75">
+                        <div class="container">
+                          <form action="/action_page.php">
+                    
+                            <div class="row">
+                              <div class="col-50">
+                                <h3>COURSE FEE</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city" placeholder="New York">
+                    
+                                <div class="row">
+                                  <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="NY">
+                                  </div>
+                                  <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                  </div>
+                                </div>
+                              </div>
+                    
+                              <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                <label for="expmonth">Exp Month</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    
+                                <div class="row">
+                                  <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                  </div>
+                                  <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                  </div>
+                                </div>
+                              </div>
+                     </div><label><input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                            </label>
+     
+                          <a href="#/home" class="cancel">Cancel</a><br>
+                          <a href="#/home"><button class=" ml-2 btn btn-primary pay">PAY NOW</button></a>
+                        </div>
+        
+                      </div>
+                    </div>
+                    
+                  </script>
+
+<div class="scrollmenu">
+           
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+<a href="#/home">HOME</a>&nbsp;
+    <a href="#/second">ABOUT US</a>&nbsp;
+    <a href="#/third">CONTACT US</a>&nbsp;
+        <a href="#/four">LIBRARY</a>&nbsp;
+    <a href="#/five">ACTIVITY</a>&nbsp;
+    <a href="#/six">DEPARAMENT</a>&nbsp;
+    <a href="#/eight">STAFF</a>&nbsp;
+    <a href="#/seven">FORM</a>&nbsp;
+    <a href="#/fee">FEE</a>&nbsp;
+    
+</nav>
+
+ 
+</div>
+    
+    <div ng-view></div>
+    <footer>
+      
+       Collage administration system
+    </footer>
+
+    <script>
+        var app = angular.module('myApp', []);
+        var app = angular.module('myApp', ['ngRoute']);
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when('/', {
+                    templateUrl: 'home.html',
+                    controller: 'FirstController'
+                })
+                .when('/admin', {
+                    templateUrl: 'admin.html',
+                })
+
+
+                .when('/second', {
+                    templateUrl: 'about.html',
+                    controller: 'SecondController'
+                })
+
+                .when('/third', {
+                    templateUrl: 'contact.html',
+                    controller: 'ThirdController'
+                })
+
+                .when('/four', {
+                    templateUrl: 'lib.html',
+                    controller: 'FourController'
+                })
+
+                .when('/five', {
+                    templateUrl: 'act.html',
+                    controller: 'FiveController'
+                })
+                .when('/six', {
+                    templateUrl: 'dep.html',
+                    controller: 'sixController'
+                })
+                .when('/eight' ,{
+                    templateUrl: 'sff.html',
+                     controller: 'eightController'
+                })
+                .when('/seven' ,{
+                    templateUrl: 'form.html',
+                     controller: 'sevenController'
+                })
+                .when('/fee/form' ,{
+                    templateUrl: 'fee.html',
+                     controller: 'nignController'
+                })
+                
+
+                .otherwise({ redirectTo: '/' });
+        });
+
+        // Controller is a JS function that maintains 
+        // application data and behavior using $scope object
+        // properties and methods can be attached to the
+        // $scope object inside a controller function 
+
+
+    </script>
+</body>
+</html>
